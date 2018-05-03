@@ -10,6 +10,9 @@ public class App {
 
     public static void main(String args[]){
 
+        //https://www.seleniumhq.org/docs/03_webdriver.jsp
+
+
         //Firefox still doesn't work even after updating to Firefox 59.0.2 (64bit)
         //System.setProperty("webdriver.gecko.driver", "C:\\Users\\GBTC440015ur\\Desktop\\selenium\\geckodriver-v0.20.1-win64\\geckodriver.exe");
         //WebDriver wd = new FirefoxDriver();
@@ -29,7 +32,7 @@ public class App {
 
 
         WebElement element=wd.findElement(By.xpath("//input[@name='emailid']"));
-        element.sendKeys("abc@gmail.com");
+        element.sendKeys("abcgmail.com");
 
         WebElement button=wd.findElement(By.xpath("//input[@name='btnLogin']"));
         button.click();
